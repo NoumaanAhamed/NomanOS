@@ -9,7 +9,7 @@ start:
     mov ah, 0eh
     int 10h
 
-    add bx,1
+    inc bx
     jmp start
 
 done:
@@ -20,10 +20,11 @@ print_nl:
     pusha
 
     mov ah, 0x0e
-    mov al, 0x0a
+
+    mov al, 0x0a ;newline
     int 0x10
 
-    mov al, 0x0d
+    mov al, 0x0d ;padding
     int 0x10
 
     popa
