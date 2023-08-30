@@ -45,3 +45,7 @@
 - Memory addressing in assembly involves specifying addresses directly or using labels for readability.
 
 - The [org 0x7C00] directive informs the assembler about the expected memory loading address.
+
+- Binary editor consists of Hexadecimal values
+
+- Int 0x10 converts 8 bits to Integer to ASCII

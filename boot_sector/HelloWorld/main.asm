@@ -12,7 +12,7 @@ call print
 call print_nl
 
 ;give varying length inputs
-mov dx,'H' ;or 0x12FE
+mov dx,0x12fe ;or 0x12FE
 
 call print_hex
 

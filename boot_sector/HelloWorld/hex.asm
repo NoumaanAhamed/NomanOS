@@ -2,7 +2,14 @@
 
 mov ah,0x0e
 
-mov al,[var + 4]
+mov bx, 0002h
+
+; mov al , 'A'
+
+; add al, bl
+
+add bl, 30h
+mov al,bl
 
 int 0x10
 
